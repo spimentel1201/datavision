@@ -1,0 +1,8 @@
+{
+  "name": "datavision-app",
+  "version": "1.0.0",
+  "description": "DataVision Analytics - Sistema de análisis de archivos CSV (HT-05 PIAD-626)",
+  "main": "server.js",
+  "scripts": { "start": "node server.js" },
+  "license": "MIT"
+}
