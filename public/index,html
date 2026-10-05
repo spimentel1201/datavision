@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DataVision Analytics</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+:root{--ink:#14213D;--bg:#F2F4F8;--card:#fff;--line:#DDE2EB;--muted:#5B6578;--accent:#2B59FF;--teal:#12A594;--amber:#F2A33A;--red:#E5546C}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 'IBM Plex Sans',system-ui,-apple-system,Segoe UI,Arial,sans-serif;font-variant-numeric:tabular-nums}
+header{background:var(--ink);color:#fff;padding:14px 28px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.logo{display:flex;align-items:flex-end;gap:3px;height:28px}
+.logo i{display:block;width:6px;border-radius:2px;background:#6F93FF}.logo i:nth-child(2){background:var(--teal)}.logo i:nth-child(3){background:var(--amber)}
+header h1{font-size:19px;margin:0;font-weight:600;letter-spacing:.2px}
+header p{margin:0;color:#B7C1D9;font-size:13px}
+.pill{margin-left:auto;display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);padding:6px 14px;border-radius:99px;font-size:13px}
+.dot{width:9px;height:9px;border-radius:50%;background:var(--amber)}.ok .dot{background:#3DDC97;box-shadow:0 0 0 4px rgba(61,220,151,.25)}.bad .dot{background:var(--red)}
+.wrap{display:grid;grid-template-columns:300px 1fr;gap:20px;padding:20px 28px;max-width:1500px;margin:auto}
+aside .card{position:sticky;top:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px}
+h2{font-size:15px;margin:0 0 12px;font-weight:600}
+.drop{border:2px dashed #B5C0D6;border-radius:8px;padding:22px 12px;text-align:center;color:var(--muted);cursor:pointer;transition:.15s}
+.drop:hover,.drop.over{border-color:var(--accent);background:#EEF2FF;color:var(--accent)}
+.drop b{display:block;color:var(--ink);margin-bottom:2px}
+.samples{display:flex;flex-direction:column;gap:6px;margin:12px 0 4px}
+button.s{all:unset;cursor:pointer;padding:7px 10px;border:1px solid var(--line);border-radius:6px;font-size:13px;display:flex;justify-content:space-between}
+button.s:hover,button.s.on{border-color:var(--accent);background:#EEF2FF}
+button.s:focus-visible,.drop:focus-visible,select:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+label{display:block;font-size:13px;color:var(--muted);margin:14px 0 4px}
+select,input[type=search]{width:100%;padding:8px 10px;border:1px solid var(--line);border-radius:6px;font:inherit;background:#fff;color:var(--ink)}
+main{display:flex;flex-direction:column;gap:20px;min-width:0}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.kpi{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:10px;padding:14px 16px}
+.kpi:nth-child(2){border-left-color:var(--teal)}.kpi:nth-child(3){border-left-color:var(--amber)}.kpi:nth-child(4){border-left-color:#7A5CFA}
+.kpi span{font-size:13px;color:var(--muted)}.kpi strong{display:block;font-size:26px;font-weight:600;margin-top:2px;overflow:hidden;text-overflow:ellipsis}
+.grid2{display:grid;grid-template-columns:3fr 2fr;gap:20px}
+.chart{height:270px;position:relative}
+.empty{padding:70px 20px;text-align:center;color:var(--muted)}
+.tw{overflow:auto;max-height:380px;border:1px solid var(--line);border-radius:8px}
+table{border-collapse:collapse;width:100%;font-size:13.5px}
+th,td{padding:8px 12px;text-align:left;white-space:nowrap;border-bottom:1px solid #EDF0F5}
+th{position:sticky;top:0;background:#F7F9FC;font-weight:600}
+td.n,th.n{text-align:right}
+.row{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:12px;flex-wrap:wrap}.row h2{margin:0}.row input{max-width:260px}
+.hint{font-size:12.5px;color:var(--muted);margin-top:10px}
+@media(max-width:1000px){.wrap{grid-template-columns:1fr;padding:16px}aside .card{position:static}.kpis{grid-template-columns:repeat(2,1fr)}.grid2{grid-template-columns:1fr}header{padding:14px 16px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo" aria-hidden="true"><i style="height:12px"></i><i style="height:20px"></i><i style="height:28px"></i></div>
+  <div><h1>DataVision Analytics</h1><p>Sistema de análisis de archivos CSV</p></div>
+  <div class="pill" id="status"><span class="dot"></span><span id="stxt">Verificando estado...</span></div>
+</header>
+
+<div class="wrap">
+  <aside>
+    <div class="card">
+      <h2>Archivo de datos</h2>
+      <div class="drop" id="drop" tabindex="0" role="button" aria-label="Elegir archivo CSV">
+        <b>Suelta tu CSV aquí</b>o haz clic para elegirlo
+        <input type="file" id="file" accept=".csv,text/csv" hidden>
+      </div>
+      <label style="margin-top:16px">Archivos de ejemplo</label>
+      <div class="samples" id="samples"></div>
+      <div id="controls" hidden>
+        <label for="selCat">Agrupar por</label><select id="selCat"></select>
+        <label for="selNum">Medida</label><select id="selNum"></select>
+        <label for="selAgg">Cálculo</label>
+        <select id="selAgg"><option value="sum">Suma</option><option value="avg">Promedio</option><option value="count">Conteo</option></select>
+      </div>
+      <p class="hint">El archivo se analiza en tu navegador y no se envía al servidor.</p>
+    </div>
+  </aside>
+
+  <main>
+    <div class="card empty" id="welcome"><h2>Carga un archivo para comenzar</h2>Arrastra un CSV o prueba con uno de los ejemplos. El panel detecta las columnas y arma los gráficos solo.</div>
+    <div id="dash" hidden style="display:none;flex-direction:column;gap:20px">
+      <div class="kpis" id="kpis"></div>
+      <div class="card" id="trendCard"><h2 id="trendTitle">Evolución en el tiempo</h2><div class="chart"><canvas id="cTrend"></canvas></div></div>
+      <div class="grid2">
+        <div class="card"><h2 id="barTitle">Ranking</h2><div class="chart"><canvas id="cBar"></canvas></div></div>
+        <div class="card"><h2 id="pieTitle">Participación</h2><div class="chart"><canvas id="cPie"></canvas></div></div>
+      </div>
+      <div class="card"><h2>Resumen de columnas numéricas</h2><div class="tw"><table id="stats"></table></div></div>
+      <div class="card">
+        <div class="row"><h2 id="dtTitle">Datos</h2><input type="search" id="q" placeholder="Buscar en los datos" aria-label="Buscar en los datos"></div>
+        <div class="tw"><table id="data"></table></div>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script>
+var $=function(s){return document.querySelector(s)};
+var COLORS=['#2B59FF','#12A594','#F2A33A','#7A5CFA','#E5546C','#3AA7E0','#5B6578'];
+var fmt=new Intl.NumberFormat('es-PE',{maximumFractionDigits:2});
+var rows=[],cols=[],types=[],charts={},fileName='';
+
+/* ---------- Estado del servicio ---------- */
+fetch('/api/status').then(function(r){return r.json()}).then(function(s){
+  $('#status').className='pill ok';$('#stxt').textContent='Estado: '+s.estado;$('#status').title='Servidor '+s.host+' - Node '+s.node;
+}).catch(function(){$('#status').className='pill bad';$('#stxt').textContent='Estado: sin conexión'});
+
+/* ---------- Archivos de ejemplo ---------- */
+fetch('/api/samples').then(function(r){return r.json()}).then(function(list){
+  list.forEach(function(f){
+    var b=document.createElement('button');b.className='s';b.textContent=f;
+    b.onclick=function(){
+      fetch('/samples/'+f).then(function(r){return r.text()}).then(function(t){load(t,f);
+        document.querySelectorAll('button.s').forEach(function(x){x.classList.toggle('on',x===b)})});
+    };
+    $('#samples').appendChild(b);
+  });
+});
+
+/* ---------- Carga de archivo ---------- */
+var drop=$('#drop'),inp=$('#file');
+drop.onclick=function(){inp.click()};
+drop.onkeydown=function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();inp.click()}};
+['dragover','dragenter'].forEach(function(ev){drop.addEventListener(ev,function(e){e.preventDefault();drop.classList.add('over')})});
+['dragleave','drop'].forEach(function(ev){drop.addEventListener(ev,function(e){e.preventDefault();drop.classList.remove('over')})});
+drop.addEventListener('drop',function(e){read(e.dataTransfer.files[0])});
+inp.onchange=function(){read(inp.files[0])};
+function read(f){if(!f)return;var r=new FileReader();r.onload=function(){load(String(r.result),f.name)};r.readAsText(f,'utf-8')}
+
+/* ---------- Lectura de CSV (admite comillas y saltos de línea) ---------- */
+function parseCSV(t){
+  t=t.replace(/^\uFEFF/,'');var out=[],r=[],f='',q=false,i,c;
+  for(i=0;i<t.length;i++){c=t[i];
+    if(q){if(c==='"'){if(t[i+1]==='"'){f+='"';i++}else q=false}else f+=c}
+    else if(c==='"')q=true;
+    else if(c===','){r.push(f);f=''}
+    else if(c==='\n'||c==='\r'){if(c==='\r'&&t[i+1]==='\n')i++;r.push(f);f='';if(r.length>1||r[0]!=='')out.push(r);r=[]}
+    else f+=c;
+  }
+  if(f!==''||r.length){r.push(f);out.push(r)}
+  return out;
+}
+function infer(i){
+  var v=rows.map(function(r){return r[i]}).filter(function(x){return x!==''&&x!=null});
+  if(!v.length)return'cat';
+  if(v.filter(function(x){return !isNaN(+x)}).length/v.length>.9)return'num';
+  if(v.filter(function(x){return /^\d{4}-\d{2}/.test(x)}).length/v.length>.9)return'date';
+  return'cat';
+}
+function load(text,name){
+  var p=parseCSV(text);
+  if(p.length<2){alert('El archivo no tiene datos que analizar.');return}
+  cols=p[0].map(function(s){return s.trim()});rows=p.slice(1);fileName=name;
+  types=cols.map(function(_,i){return infer(i)});
+  var cat=[],num=[],i;
+  for(i=0;i<cols.length;i++){if(types[i]==='cat')cat.push(i);if(types[i]==='num')num.push(i)}
+  fill('#selCat',cat.length?cat:cols.map(function(_,k){return k}));
+  fill('#selNum',num);
+  /* Por defecto: categoría con pocos valores distintos y la medida más representativa */
+  var best=cat[0];
+  cat.forEach(function(c){var u=uniq(c);if(u>=2&&u<=12&&(uniq(best)>12||uniq(best)<2))best=c});
+  if(best!=null)$('#selCat').value=best;
+  var nm=num.filter(function(c){return /total|costo|cost|cpu|monto|precio/i.test(cols[c])});
+  if(nm.length)$('#selNum').value=nm[0];
+  $('#selAgg').value=num.length?'sum':'count';
+  $('#controls').hidden=false;$('#welcome').style.display='none';$('#dash').style.display='flex';
+  $('#q').value='';render();
+}
+function fill(sel,idx){$(sel).innerHTML=idx.map(function(i){return'<option value="'+i+'">'+esc(cols[i])+'</option>'}).join('')}
+function uniq(c){var s={};rows.forEach(function(r){s[r[c]]=1});return Object.keys(s).length}
+function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(m){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]})}
+['#selCat','#selNum','#selAgg'].forEach(function(s){$(s).onchange=render});
+$('#q').oninput=table;
+
+/* ---------- Cálculos ---------- */
+function aggregate(keyFn,vi,agg){
+  var m={};
+  rows.forEach(function(r){var k=keyFn(r);if(k==null||k==='')return;var o=m[k]||(m[k]={s:0,c:0});o.c++;if(vi!=null){var x=+r[vi];if(!isNaN(x)&&r[vi]!=='')o.s+=x}});
+  return Object.keys(m).map(function(k){var o=m[k];return[k,agg==='count'?o.c:agg==='avg'?o.s/o.c:o.s]});
+}
+function column(i){return rows.map(function(r){return +r[i]}).filter(function(x){return !isNaN(x)})}
+var AGG={sum:'Suma',avg:'Promedio',count:'Conteo'};
+
+/* ---------- Render ---------- */
+function render(){
+  var ci=+$('#selCat').value,ni=$('#selNum').value===''?null:+$('#selNum').value,agg=$('#selAgg').value;
+  if(ni==null)agg='count';
+  var measure=agg==='count'?'registros':cols[ni];
+  var label=AGG[agg]+(agg==='count'?' de registros':' de '+cols[ni]);
+
+  /* KPIs */
+  var empty=0;rows.forEach(function(r){r.forEach(function(v){if(v==='')empty++})});
+  var kp=[['Registros',fmt.format(rows.length)],['Columnas',cols.length]];
+  if(ni!=null){var v=column(ni),sum=v.reduce(function(a,b){return a+b},0);
+    kp.push([agg==='avg'?'Promedio de '+cols[ni]:'Total de '+cols[ni],fmt.format(agg==='avg'?sum/(v.length||1):sum)])}
+  else kp.push(['Columnas numéricas',0]);
+  kp.push(['Datos completos',fmt.format(100*(1-empty/(rows.length*cols.length)))+'%']);
+  $('#kpis').innerHTML=kp.map(function(k){return'<div class="kpi"><span>'+esc(k[0])+'</span><strong>'+esc(k[1])+'</strong></div>'}).join('');
+
+  /* Tendencia */
+  var di=types.indexOf('date');
+  $('#trendCard').style.display=di<0?'none':'block';
+  if(di>=0){
+    var len=10;if(uniq(di)>60)len=10;
+    var keyFn=function(r){return (r[di]||'').substring(0,len)};
+    var u={};rows.forEach(function(r){u[keyFn(r)]=1});
+    if(Object.keys(u).length>60){len=7;}
+    var t=aggregate(function(r){return (r[di]||'').substring(0,len)},ni,agg).sort(function(a,b){return a[0]<b[0]?-1:1});
+    $('#trendTitle').textContent=label+' por '+(len===7?'mes':'fecha')+' ('+cols[di]+')';
+    draw('cTrend','line',t.map(function(x){return x[0]}),t.map(function(x){return x[1]}),label);
+  }
+
+  /* Ranking y participación */
+  var g=aggregate(function(r){return r[ci]},ni,agg).sort(function(a,b){return b[1]-a[1]});
+  var top=g.slice(0,10);
+  $('#barTitle').textContent=label+' por '+cols[ci];
+  draw('cBar','bar',top.map(function(x){return x[0]}),top.map(function(x){return x[1]}),label);
+  var pl=g.slice(0,6),rest=g.slice(6).reduce(function(a,x){return a+x[1]},0);
+  if(rest>0&&agg!=='avg')pl.push(['Otros',rest]);
+  $('#pieTitle').textContent='Participación por '+cols[ci];
+  draw('cPie','doughnut',pl.map(function(x){return x[0]}),pl.map(function(x){return x[1]}),label);
+
+  /* Resumen numérico */
+  var h='<tr><th>Columna</th><th class="n">Mínimo</th><th class="n">Máximo</th><th class="n">Promedio</th><th class="n">Suma</th></tr>',any=false;
+  cols.forEach(function(c,i){if(types[i]!=='num')return;any=true;var v=column(i),s=v.reduce(function(a,b){return a+b},0);
+    h+='<tr><td>'+esc(c)+'</td><td class="n">'+fmt.format(Math.min.apply(null,v))+'</td><td class="n">'+fmt.format(Math.max.apply(null,v))+'</td><td class="n">'+fmt.format(s/(v.length||1))+'</td><td class="n">'+fmt.format(s)+'</td></tr>'});
+  $('#stats').innerHTML=any?h:'<tr><td>Este archivo no tiene columnas numéricas.</td></tr>';
+  table();
+}
+function draw(id,type,labels,data,name){
+  if(charts[id])charts[id].destroy();
+  var pie=type==='doughnut',cfg={type:type,data:{labels:labels,datasets:[{label:name,data:data,
+    backgroundColor:pie?COLORS:(type==='bar'?'#2B59FF':'rgba(43,89,255,.12)'),borderColor:pie?'#fff':'#2B59FF',borderWidth:type==='line'?2.5:pie?2:0,
+    borderRadius:type==='bar'?4:0,fill:type==='line',tension:.3,pointRadius:type==='line'&&data.length<40?3:0}]},
+    options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:pie,position:'right'}},
+      scales:pie?{}:{x:{grid:{display:false},ticks:{maxTicksLimit:12}},y:{beginAtZero:true,grid:{color:'#EDF0F5'}}}}};
+  charts[id]=new Chart($('#'+id),cfg);
+}
+function table(){
+  var q=$('#q').value.toLowerCase(),list=q?rows.filter(function(r){return r.join(' ').toLowerCase().indexOf(q)>-1}):rows;
+  var shown=list.slice(0,100);
+  $('#dtTitle').textContent=fileName+' - '+fmt.format(shown.length)+' de '+fmt.format(list.length)+' filas';
+  $('#data').innerHTML='<tr>'+cols.map(function(c,i){return'<th'+(types[i]==='num'?' class="n"':'')+'>'+esc(c)+'</th>'}).join('')+'</tr>'+
+    shown.map(function(r){return'<tr>'+cols.map(function(_,i){return'<td'+(types[i]==='num'?' class="n"':'')+'>'+esc(r[i])+'</td>'}).join('')+'</tr>'}).join('');
+}
+</script>
+</body>
+</html>
