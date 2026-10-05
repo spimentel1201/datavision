@@ -1,0 +1,37 @@
+mes,servicio,costo_usd,presupuesto_mensual_usd
+2026-04,Amazon EC2,9.49,20.0
+2026-05,Amazon EC2,10.17,20.0
+2026-06,Amazon EC2,11.33,20.0
+2026-07,Amazon EC2,12.8,20.0
+2026-08,Amazon EC2,15.43,20.0
+2026-09,Amazon EC2,16.95,20.0
+2026-04,Amazon S3,1.2,20.0
+2026-05,Amazon S3,1.44,20.0
+2026-06,Amazon S3,1.82,20.0
+2026-07,Amazon S3,2.38,20.0
+2026-08,Amazon S3,3.07,20.0
+2026-09,Amazon S3,3.65,20.0
+2026-04,Amazon CloudWatch,0.77,20.0
+2026-05,Amazon CloudWatch,0.91,20.0
+2026-06,Amazon CloudWatch,0.97,20.0
+2026-07,Amazon CloudWatch,1.11,20.0
+2026-08,Amazon CloudWatch,1.14,20.0
+2026-09,Amazon CloudWatch,1.31,20.0
+2026-04,AWS CodeDeploy,0.0,20.0
+2026-05,AWS CodeDeploy,0.0,20.0
+2026-06,AWS CodeDeploy,0.0,20.0
+2026-07,AWS CodeDeploy,0.0,20.0
+2026-08,AWS CodeDeploy,0.0,20.0
+2026-09,AWS CodeDeploy,0.0,20.0
+2026-04,Amazon SNS,0.1,20.0
+2026-05,Amazon SNS,0.11,20.0
+2026-06,Amazon SNS,0.11,20.0
+2026-07,Amazon SNS,0.11,20.0
+2026-08,Amazon SNS,0.12,20.0
+2026-09,Amazon SNS,0.12,20.0
+2026-04,Transferencia de datos,0.92,20.0
+2026-05,Transferencia de datos,1.09,20.0
+2026-06,Transferencia de datos,1.24,20.0
+2026-07,Transferencia de datos,1.52,20.0
+2026-08,Transferencia de datos,1.7,20.0
+2026-09,Transferencia de datos,1.97,20.0

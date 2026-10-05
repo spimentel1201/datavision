@@ -1,0 +1,501 @@
+id_venta,fecha,cliente_id,producto,categoria,cantidad,precio_unitario,total,region
+V0001,2026-01-01,C039,Impresora,Oficina,7,520,3640,Cusco
+V0244,2026-01-01,C079,Impresora,Oficina,7,520,3640,Cusco
+V0474,2026-01-03,C091,Auriculares,Accesorios,7,160,1120,Arequipa
+V0174,2026-01-04,C024,Silla ergonómica,Oficina,6,430,2580,Arequipa
+V0447,2026-01-04,C051,Teclado,Accesorios,5,90,450,Cusco
+V0307,2026-01-05,C014,Tablet,Tecnología,5,1200,6000,Trujillo
+V0411,2026-01-05,C028,Mouse,Accesorios,3,45,135,Piura
+V0487,2026-01-05,C063,Laptop,Tecnología,6,2800,16800,Arequipa
+V0440,2026-01-07,C038,Silla ergonómica,Oficina,7,430,3010,Trujillo
+V0059,2026-01-08,C091,Teclado,Accesorios,5,90,450,Piura
+V0051,2026-01-09,C012,Tablet,Tecnología,8,1200,9600,Cusco
+V0248,2026-01-09,C046,Silla ergonómica,Oficina,5,430,2150,Lima
+V0413,2026-01-09,C001,Tablet,Tecnología,8,1200,9600,Piura
+V0414,2026-01-09,C068,Auriculares,Accesorios,1,160,160,Cusco
+V0189,2026-01-10,C059,Laptop,Tecnología,7,2800,19600,Lima
+V0324,2026-01-10,C057,Mouse,Accesorios,4,45,180,Cusco
+V0081,2026-01-11,C098,Monitor,Tecnología,10,750,7500,Cusco
+V0376,2026-01-12,C039,Monitor,Tecnología,1,750,750,Trujillo
+V0464,2026-01-13,C062,Teclado,Accesorios,6,90,540,Lima
+V0026,2026-01-14,C011,Laptop,Tecnología,7,2800,19600,Trujillo
+V0036,2026-01-14,C040,Impresora,Oficina,2,520,1040,Piura
+V0151,2026-01-14,C017,Teclado,Accesorios,2,90,180,Lima
+V0172,2026-01-14,C078,Monitor,Tecnología,7,750,5250,Cusco
+V0046,2026-01-15,C064,Auriculares,Accesorios,6,160,960,Cusco
+V0420,2026-01-17,C012,Impresora,Oficina,2,520,1040,Trujillo
+V0491,2026-01-17,C036,Monitor,Tecnología,5,750,3750,Arequipa
+V0409,2026-01-18,C010,Laptop,Tecnología,9,2800,25200,Lima
+V0255,2026-01-19,C097,Tablet,Tecnología,5,1200,6000,Arequipa
+V0237,2026-01-20,C037,Teclado,Accesorios,3,90,270,Trujillo
+V0315,2026-01-20,C018,Laptop,Tecnología,1,2800,2800,Cusco
+V0127,2026-01-21,C040,Teclado,Accesorios,2,90,180,Trujillo
+V0039,2026-01-22,C045,Mouse,Accesorios,10,45,450,Piura
+V0206,2026-01-22,C058,Auriculares,Accesorios,8,160,1280,Piura
+V0423,2026-01-22,C030,Mouse,Accesorios,9,45,405,Arequipa
+V0494,2026-01-22,C098,Silla ergonómica,Oficina,9,430,3870,Trujillo
+V0224,2026-01-23,C053,Teclado,Accesorios,8,90,720,Cusco
+V0250,2026-01-23,C046,Silla ergonómica,Oficina,3,430,1290,Piura
+V0460,2026-01-23,C073,Silla ergonómica,Oficina,3,430,1290,Trujillo
+V0060,2026-01-24,C007,Teclado,Accesorios,5,90,450,Piura
+V0113,2026-01-24,C042,Impresora,Oficina,1,520,520,Lima
+V0291,2026-01-24,C083,Laptop,Tecnología,2,2800,5600,Piura
+V0424,2026-01-24,C010,Tablet,Tecnología,5,1200,6000,Cusco
+V0256,2026-01-25,C084,Impresora,Oficina,6,520,3120,Cusco
+V0381,2026-01-25,C032,Laptop,Tecnología,8,2800,22400,Lima
+V0179,2026-01-26,C087,Teclado,Accesorios,10,90,900,Lima
+V0306,2026-01-26,C037,Silla ergonómica,Oficina,1,430,430,Trujillo
+V0212,2026-01-27,C081,Silla ergonómica,Oficina,10,430,4300,Cusco
+V0339,2026-01-27,C013,Monitor,Tecnología,4,750,3000,Trujillo
+V0089,2026-01-28,C025,Tablet,Tecnología,7,1200,8400,Piura
+V0184,2026-01-29,C001,Auriculares,Accesorios,10,160,1600,Arequipa
+V0203,2026-01-29,C046,Impresora,Oficina,5,520,2600,Piura
+V0285,2026-01-29,C016,Auriculares,Accesorios,9,160,1440,Piura
+V0167,2026-01-31,C076,Teclado,Accesorios,9,90,810,Piura
+V0412,2026-01-31,C080,Tablet,Tecnología,6,1200,7200,Piura
+V0018,2026-02-02,C054,Teclado,Accesorios,4,90,360,Trujillo
+V0252,2026-02-02,C092,Teclado,Accesorios,3,90,270,Trujillo
+V0475,2026-02-02,C074,Monitor,Tecnología,5,750,3750,Lima
+V0202,2026-02-04,C061,Teclado,Accesorios,8,90,720,Trujillo
+V0380,2026-02-04,C013,Monitor,Tecnología,4,750,3000,Piura
+V0468,2026-02-04,C039,Tablet,Tecnología,6,1200,7200,Lima
+V0040,2026-02-05,C065,Auriculares,Accesorios,6,160,960,Cusco
+V0007,2026-02-07,C059,Monitor,Tecnología,8,750,6000,Trujillo
+V0158,2026-02-07,C011,Tablet,Tecnología,8,1200,9600,Cusco
+V0282,2026-02-07,C017,Auriculares,Accesorios,7,160,1120,Cusco
+V0071,2026-02-08,C021,Teclado,Accesorios,9,90,810,Lima
+V0015,2026-02-09,C092,Impresora,Oficina,8,520,4160,Cusco
+V0426,2026-02-09,C039,Teclado,Accesorios,7,90,630,Arequipa
+V0116,2026-02-10,C079,Teclado,Accesorios,3,90,270,Trujillo
+V0194,2026-02-10,C051,Auriculares,Accesorios,9,160,1440,Cusco
+V0418,2026-02-10,C048,Impresora,Oficina,7,520,3640,Trujillo
+V0070,2026-02-11,C021,Monitor,Tecnología,5,750,3750,Arequipa
+V0079,2026-02-11,C077,Tablet,Tecnología,8,1200,9600,Lima
+V0235,2026-02-11,C048,Monitor,Tecnología,7,750,5250,Arequipa
+V0362,2026-02-11,C068,Monitor,Tecnología,4,750,3000,Trujillo
+V0231,2026-02-12,C098,Mouse,Accesorios,5,45,225,Arequipa
+V0490,2026-02-12,C073,Tablet,Tecnología,3,1200,3600,Lima
+V0178,2026-02-13,C007,Silla ergonómica,Oficina,10,430,4300,Arequipa
+V0216,2026-02-13,C040,Teclado,Accesorios,10,90,900,Piura
+V0459,2026-02-13,C014,Laptop,Tecnología,6,2800,16800,Arequipa
+V0465,2026-02-13,C015,Impresora,Oficina,7,520,3640,Arequipa
+V0480,2026-02-13,C087,Impresora,Oficina,10,520,5200,Arequipa
+V0437,2026-02-14,C024,Mouse,Accesorios,3,45,135,Trujillo
+V0087,2026-02-15,C041,Laptop,Tecnología,8,2800,22400,Cusco
+V0146,2026-02-16,C085,Mouse,Accesorios,8,45,360,Arequipa
+V0393,2026-02-17,C069,Tablet,Tecnología,6,1200,7200,Arequipa
+V0213,2026-02-18,C072,Mouse,Accesorios,6,45,270,Trujillo
+V0312,2026-02-19,C051,Mouse,Accesorios,3,45,135,Cusco
+V0416,2026-02-19,C068,Teclado,Accesorios,2,90,180,Arequipa
+V0069,2026-02-20,C098,Laptop,Tecnología,10,2800,28000,Arequipa
+V0236,2026-02-20,C092,Laptop,Tecnología,6,2800,16800,Cusco
+V0401,2026-02-20,C093,Tablet,Tecnología,8,1200,9600,Trujillo
+V0429,2026-02-20,C056,Silla ergonómica,Oficina,1,430,430,Arequipa
+V0112,2026-02-21,C057,Auriculares,Accesorios,2,160,320,Arequipa
+V0221,2026-02-21,C065,Mouse,Accesorios,5,45,225,Piura
+V0340,2026-02-21,C088,Silla ergonómica,Oficina,8,430,3440,Arequipa
+V0208,2026-02-22,C044,Laptop,Tecnología,8,2800,22400,Lima
+V0230,2026-02-22,C092,Tablet,Tecnología,6,1200,7200,Piura
+V0261,2026-02-22,C011,Impresora,Oficina,6,520,3120,Cusco
+V0495,2026-02-22,C095,Monitor,Tecnología,7,750,5250,Arequipa
+V0249,2026-02-23,C099,Silla ergonómica,Oficina,4,430,1720,Piura
+V0009,2026-02-24,C100,Teclado,Accesorios,1,90,90,Trujillo
+V0193,2026-02-24,C032,Mouse,Accesorios,7,45,315,Trujillo
+V0346,2026-02-24,C043,Impresora,Oficina,10,520,5200,Cusco
+V0461,2026-02-24,C002,Silla ergonómica,Oficina,7,430,3010,Lima
+V0242,2026-02-26,C064,Tablet,Tecnología,2,1200,2400,Piura
+V0320,2026-02-26,C054,Silla ergonómica,Oficina,6,430,2580,Piura
+V0363,2026-02-27,C008,Silla ergonómica,Oficina,2,430,860,Piura
+V0035,2026-02-28,C100,Teclado,Accesorios,10,90,900,Arequipa
+V0075,2026-02-28,C070,Monitor,Tecnología,7,750,5250,Arequipa
+V0161,2026-02-28,C084,Auriculares,Accesorios,2,160,320,Piura
+V0191,2026-02-28,C052,Auriculares,Accesorios,5,160,800,Lima
+V0196,2026-02-28,C068,Mouse,Accesorios,9,45,405,Piura
+V0271,2026-02-28,C004,Impresora,Oficina,4,520,2080,Arequipa
+V0493,2026-02-28,C035,Mouse,Accesorios,10,45,450,Piura
+V0066,2026-03-02,C072,Mouse,Accesorios,4,45,180,Trujillo
+V0497,2026-03-02,C100,Mouse,Accesorios,8,45,360,Arequipa
+V0055,2026-03-03,C093,Impresora,Oficina,4,520,2080,Arequipa
+V0186,2026-03-03,C001,Impresora,Oficina,6,520,3120,Trujillo
+V0134,2026-03-05,C059,Laptop,Tecnología,5,2800,14000,Cusco
+V0033,2026-03-06,C061,Teclado,Accesorios,4,90,360,Lima
+V0105,2026-03-06,C065,Tablet,Tecnología,1,1200,1200,Piura
+V0153,2026-03-06,C095,Impresora,Oficina,1,520,520,Trujillo
+V0159,2026-03-06,C036,Teclado,Accesorios,2,90,180,Piura
+V0025,2026-03-07,C080,Teclado,Accesorios,8,90,720,Piura
+V0217,2026-03-07,C086,Auriculares,Accesorios,6,160,960,Piura
+V0150,2026-03-08,C070,Impresora,Oficina,3,520,1560,Cusco
+V0187,2026-03-08,C049,Auriculares,Accesorios,3,160,480,Piura
+V0280,2026-03-08,C079,Silla ergonómica,Oficina,8,430,3440,Lima
+V0130,2026-03-09,C070,Teclado,Accesorios,4,90,360,Cusco
+V0222,2026-03-09,C077,Laptop,Tecnología,6,2800,16800,Trujillo
+V0374,2026-03-10,C084,Mouse,Accesorios,9,45,405,Cusco
+V0391,2026-03-10,C050,Auriculares,Accesorios,7,160,1120,Arequipa
+V0140,2026-03-11,C050,Mouse,Accesorios,4,45,180,Trujillo
+V0372,2026-03-11,C099,Auriculares,Accesorios,3,160,480,Trujillo
+V0185,2026-03-12,C098,Impresora,Oficina,4,520,2080,Cusco
+V0229,2026-03-12,C033,Monitor,Tecnología,10,750,7500,Lima
+V0410,2026-03-12,C081,Laptop,Tecnología,7,2800,19600,Arequipa
+V0483,2026-03-12,C074,Auriculares,Accesorios,10,160,1600,Trujillo
+V0428,2026-03-13,C089,Silla ergonómica,Oficina,7,430,3010,Lima
+V0499,2026-03-13,C027,Auriculares,Accesorios,3,160,480,Arequipa
+V0076,2026-03-14,C010,Teclado,Accesorios,5,90,450,Lima
+V0175,2026-03-14,C095,Auriculares,Accesorios,2,160,320,Lima
+V0482,2026-03-14,C066,Teclado,Accesorios,6,90,540,Trujillo
+V0107,2026-03-15,C053,Tablet,Tecnología,1,1200,1200,Arequipa
+V0117,2026-03-15,C030,Monitor,Tecnología,8,750,6000,Trujillo
+V0097,2026-03-16,C050,Tablet,Tecnología,9,1200,10800,Arequipa
+V0198,2026-03-16,C033,Monitor,Tecnología,2,750,1500,Arequipa
+V0006,2026-03-17,C004,Monitor,Tecnología,4,750,3000,Lima
+V0149,2026-03-17,C077,Monitor,Tecnología,6,750,4500,Lima
+V0065,2026-03-18,C073,Laptop,Tecnología,3,2800,8400,Cusco
+V0214,2026-03-18,C043,Impresora,Oficina,5,520,2600,Lima
+V0364,2026-03-18,C022,Monitor,Tecnología,10,750,7500,Cusco
+V0017,2026-03-19,C030,Mouse,Accesorios,3,45,135,Trujillo
+V0042,2026-03-20,C056,Silla ergonómica,Oficina,8,430,3440,Arequipa
+V0199,2026-03-20,C098,Teclado,Accesorios,10,90,900,Lima
+V0268,2026-03-20,C087,Laptop,Tecnología,10,2800,28000,Trujillo
+V0434,2026-03-20,C049,Mouse,Accesorios,5,45,225,Arequipa
+V0456,2026-03-20,C092,Monitor,Tecnología,5,750,3750,Trujillo
+V0378,2026-03-21,C036,Tablet,Tecnología,6,1200,7200,Arequipa
+V0119,2026-03-22,C010,Tablet,Tecnología,5,1200,6000,Trujillo
+V0177,2026-03-22,C048,Tablet,Tecnología,6,1200,7200,Cusco
+V0277,2026-03-22,C092,Impresora,Oficina,5,520,2600,Arequipa
+V0295,2026-03-22,C057,Mouse,Accesorios,1,45,45,Trujillo
+V0341,2026-03-22,C053,Laptop,Tecnología,9,2800,25200,Trujillo
+V0085,2026-03-24,C043,Silla ergonómica,Oficina,2,430,860,Trujillo
+V0286,2026-03-26,C021,Teclado,Accesorios,5,90,450,Cusco
+V0485,2026-03-27,C063,Teclado,Accesorios,9,90,810,Cusco
+V0289,2026-03-28,C076,Mouse,Accesorios,9,45,405,Piura
+V0407,2026-03-28,C094,Tablet,Tecnología,8,1200,9600,Cusco
+V0442,2026-03-28,C018,Teclado,Accesorios,7,90,630,Cusco
+V0275,2026-03-30,C092,Mouse,Accesorios,8,45,360,Trujillo
+V0386,2026-03-31,C081,Impresora,Oficina,1,520,520,Trujillo
+V0344,2026-04-01,C005,Teclado,Accesorios,7,90,630,Trujillo
+V0450,2026-04-01,C051,Tablet,Tecnología,6,1200,7200,Cusco
+V0219,2026-04-03,C028,Silla ergonómica,Oficina,5,430,2150,Cusco
+V0223,2026-04-03,C089,Teclado,Accesorios,3,90,270,Piura
+V0453,2026-04-03,C088,Monitor,Tecnología,10,750,7500,Piura
+V0027,2026-04-04,C007,Teclado,Accesorios,8,90,720,Cusco
+V0284,2026-04-04,C099,Silla ergonómica,Oficina,3,430,1290,Arequipa
+V0056,2026-04-05,C025,Silla ergonómica,Oficina,2,430,860,Arequipa
+V0472,2026-04-06,C082,Auriculares,Accesorios,3,160,480,Trujillo
+V0395,2026-04-07,C098,Laptop,Tecnología,2,2800,5600,Piura
+V0126,2026-04-08,C080,Silla ergonómica,Oficina,4,430,1720,Cusco
+V0397,2026-04-08,C095,Laptop,Tecnología,4,2800,11200,Lima
+V0348,2026-04-09,C015,Tablet,Tecnología,5,1200,6000,Cusco
+V0446,2026-04-11,C059,Tablet,Tecnología,10,1200,12000,Lima
+V0037,2026-04-12,C010,Auriculares,Accesorios,7,160,1120,Piura
+V0473,2026-04-12,C058,Auriculares,Accesorios,1,160,160,Piura
+V0274,2026-04-13,C016,Impresora,Oficina,8,520,4160,Arequipa
+V0253,2026-04-14,C006,Laptop,Tecnología,5,2800,14000,Arequipa
+V0296,2026-04-15,C044,Tablet,Tecnología,8,1200,9600,Piura
+V0398,2026-04-15,C051,Tablet,Tecnología,4,1200,4800,Arequipa
+V0365,2026-04-16,C092,Tablet,Tecnología,2,1200,2400,Piura
+V0148,2026-04-17,C076,Monitor,Tecnología,2,750,1500,Arequipa
+V0327,2026-04-17,C072,Teclado,Accesorios,9,90,810,Cusco
+V0396,2026-04-17,C043,Monitor,Tecnología,8,750,6000,Cusco
+V0454,2026-04-18,C057,Laptop,Tecnología,8,2800,22400,Cusco
+V0028,2026-04-19,C059,Auriculares,Accesorios,6,160,960,Cusco
+V0047,2026-04-19,C046,Teclado,Accesorios,8,90,720,Cusco
+V0176,2026-04-21,C049,Mouse,Accesorios,9,45,405,Trujillo
+V0023,2026-04-23,C035,Monitor,Tecnología,8,750,6000,Trujillo
+V0137,2026-04-24,C083,Silla ergonómica,Oficina,10,430,4300,Lima
+V0359,2026-04-24,C029,Impresora,Oficina,6,520,3120,Arequipa
+V0385,2026-04-24,C053,Teclado,Accesorios,9,90,810,Cusco
+V0403,2026-04-24,C095,Laptop,Tecnología,10,2800,28000,Arequipa
+V0031,2026-04-25,C084,Laptop,Tecnología,6,2800,16800,Lima
+V0278,2026-04-25,C016,Silla ergonómica,Oficina,9,430,3870,Arequipa
+V0094,2026-04-26,C015,Auriculares,Accesorios,2,160,320,Trujillo
+V0220,2026-04-26,C018,Tablet,Tecnología,4,1200,4800,Arequipa
+V0405,2026-04-28,C049,Monitor,Tecnología,6,750,4500,Piura
+V0343,2026-04-29,C069,Laptop,Tecnología,2,2800,5600,Lima
+V0382,2026-04-30,C070,Auriculares,Accesorios,8,160,1280,Arequipa
+V0005,2026-05-01,C087,Silla ergonómica,Oficina,2,430,860,Cusco
+V0122,2026-05-02,C049,Tablet,Tecnología,2,1200,2400,Piura
+V0226,2026-05-03,C040,Monitor,Tecnología,9,750,6750,Trujillo
+V0241,2026-05-03,C054,Mouse,Accesorios,1,45,45,Piura
+V0338,2026-05-03,C032,Teclado,Accesorios,2,90,180,Lima
+V0481,2026-05-03,C040,Silla ergonómica,Oficina,2,430,860,Lima
+V0049,2026-05-04,C093,Monitor,Tecnología,2,750,1500,Trujillo
+V0050,2026-05-04,C089,Tablet,Tecnología,9,1200,10800,Trujillo
+V0243,2026-05-04,C092,Laptop,Tecnología,9,2800,25200,Arequipa
+V0299,2026-05-04,C060,Mouse,Accesorios,6,45,270,Lima
+V0052,2026-05-05,C040,Monitor,Tecnología,7,750,5250,Piura
+V0323,2026-05-05,C005,Auriculares,Accesorios,3,160,480,Piura
+V0419,2026-05-05,C090,Tablet,Tecnología,10,1200,12000,Arequipa
+V0441,2026-05-05,C074,Auriculares,Accesorios,2,160,320,Piura
+V0451,2026-05-05,C042,Impresora,Oficina,8,520,4160,Trujillo
+V0044,2026-05-06,C012,Impresora,Oficina,6,520,3120,Cusco
+V0032,2026-05-07,C026,Laptop,Tecnología,1,2800,2800,Lima
+V0209,2026-05-07,C091,Teclado,Accesorios,1,90,90,Trujillo
+V0300,2026-05-07,C019,Impresora,Oficina,8,520,4160,Lima
+V0080,2026-05-09,C004,Auriculares,Accesorios,6,160,960,Lima
+V0063,2026-05-10,C062,Teclado,Accesorios,1,90,90,Lima
+V0118,2026-05-11,C086,Impresora,Oficina,8,520,4160,Lima
+V0369,2026-05-11,C001,Laptop,Tecnología,7,2800,19600,Arequipa
+V0034,2026-05-12,C099,Monitor,Tecnología,8,750,6000,Cusco
+V0131,2026-05-12,C062,Impresora,Oficina,3,520,1560,Cusco
+V0239,2026-05-12,C028,Mouse,Accesorios,1,45,45,Arequipa
+V0336,2026-05-12,C096,Silla ergonómica,Oficina,8,430,3440,Trujillo
+V0349,2026-05-12,C092,Teclado,Accesorios,8,90,720,Arequipa
+V0400,2026-05-14,C047,Silla ergonómica,Oficina,5,430,2150,Piura
+V0074,2026-05-16,C081,Mouse,Accesorios,4,45,180,Piura
+V0108,2026-05-16,C044,Mouse,Accesorios,8,45,360,Piura
+V0091,2026-05-17,C071,Laptop,Tecnología,4,2800,11200,Arequipa
+V0099,2026-05-17,C001,Silla ergonómica,Oficina,9,430,3870,Cusco
+V0337,2026-05-19,C072,Monitor,Tecnología,4,750,3000,Cusco
+V0173,2026-05-20,C090,Laptop,Tecnología,3,2800,8400,Cusco
+V0181,2026-05-20,C028,Tablet,Tecnología,7,1200,8400,Piura
+V0124,2026-05-21,C002,Laptop,Tecnología,7,2800,19600,Piura
+V0288,2026-05-21,C017,Impresora,Oficina,4,520,2080,Cusco
+V0333,2026-05-21,C037,Silla ergonómica,Oficina,9,430,3870,Lima
+V0048,2026-05-22,C072,Silla ergonómica,Oficina,5,430,2150,Lima
+V0098,2026-05-22,C099,Teclado,Accesorios,2,90,180,Trujillo
+V0444,2026-05-22,C054,Teclado,Accesorios,7,90,630,Cusco
+V0029,2026-05-23,C097,Silla ergonómica,Oficina,7,430,3010,Trujillo
+V0311,2026-05-24,C080,Tablet,Tecnología,9,1200,10800,Piura
+V0073,2026-05-25,C090,Monitor,Tecnología,5,750,3750,Trujillo
+V0211,2026-05-25,C050,Silla ergonómica,Oficina,6,430,2580,Trujillo
+V0225,2026-05-26,C097,Monitor,Tecnología,8,750,6000,Trujillo
+V0205,2026-05-27,C010,Laptop,Tecnología,6,2800,16800,Lima
+V0077,2026-05-28,C057,Teclado,Accesorios,5,90,450,Lima
+V0111,2026-05-28,C030,Mouse,Accesorios,4,45,180,Lima
+V0240,2026-05-28,C031,Auriculares,Accesorios,2,160,320,Cusco
+V0310,2026-05-28,C010,Monitor,Tecnología,6,750,4500,Trujillo
+V0335,2026-05-28,C092,Impresora,Oficina,1,520,520,Lima
+V0342,2026-05-28,C042,Tablet,Tecnología,4,1200,4800,Cusco
+V0293,2026-05-29,C083,Tablet,Tecnología,9,1200,10800,Cusco
+V0345,2026-05-29,C005,Tablet,Tecnología,3,1200,3600,Lima
+V0160,2026-05-31,C059,Silla ergonómica,Oficina,7,430,3010,Piura
+V0058,2026-06-01,C030,Mouse,Accesorios,4,45,180,Cusco
+V0123,2026-06-01,C090,Silla ergonómica,Oficina,10,430,4300,Cusco
+V0350,2026-06-01,C073,Laptop,Tecnología,6,2800,16800,Arequipa
+V0433,2026-06-01,C032,Auriculares,Accesorios,2,160,320,Lima
+V0331,2026-06-02,C029,Impresora,Oficina,9,520,4680,Cusco
+V0120,2026-06-03,C082,Silla ergonómica,Oficina,10,430,4300,Trujillo
+V0319,2026-06-03,C061,Tablet,Tecnología,10,1200,12000,Lima
+V0038,2026-06-04,C088,Monitor,Tecnología,2,750,1500,Piura
+V0121,2026-06-04,C026,Impresora,Oficina,8,520,4160,Trujillo
+V0156,2026-06-04,C059,Laptop,Tecnología,9,2800,25200,Lima
+V0355,2026-06-04,C075,Impresora,Oficina,6,520,3120,Piura
+V0139,2026-06-05,C064,Laptop,Tecnología,1,2800,2800,Lima
+V0183,2026-06-07,C006,Tablet,Tecnología,9,1200,10800,Arequipa
+V0215,2026-06-08,C084,Teclado,Accesorios,6,90,540,Trujillo
+V0254,2026-06-08,C066,Laptop,Tecnología,6,2800,16800,Trujillo
+V0093,2026-06-09,C071,Monitor,Tecnología,3,750,2250,Lima
+V0169,2026-06-09,C046,Laptop,Tecnología,5,2800,14000,Lima
+V0358,2026-06-09,C089,Auriculares,Accesorios,9,160,1440,Lima
+V0164,2026-06-10,C086,Silla ergonómica,Oficina,7,430,3010,Cusco
+V0425,2026-06-11,C003,Laptop,Tecnología,3,2800,8400,Arequipa
+V0486,2026-06-11,C058,Teclado,Accesorios,3,90,270,Piura
+V0297,2026-06-13,C094,Teclado,Accesorios,6,90,540,Cusco
+V0317,2026-06-13,C021,Teclado,Accesorios,6,90,540,Trujillo
+V0002,2026-06-14,C060,Monitor,Tecnología,7,750,5250,Trujillo
+V0102,2026-06-14,C025,Auriculares,Accesorios,8,160,1280,Arequipa
+V0384,2026-06-14,C031,Silla ergonómica,Oficina,10,430,4300,Cusco
+V0449,2026-06-14,C078,Teclado,Accesorios,5,90,450,Arequipa
+V0152,2026-06-15,C003,Silla ergonómica,Oficina,4,430,1720,Arequipa
+V0201,2026-06-15,C081,Tablet,Tecnología,10,1200,12000,Cusco
+V0476,2026-06-16,C026,Teclado,Accesorios,6,90,540,Trujillo
+V0129,2026-06-17,C096,Mouse,Accesorios,5,45,225,Trujillo
+V0302,2026-06-17,C074,Monitor,Tecnología,3,750,2250,Cusco
+V0109,2026-06-18,C087,Auriculares,Accesorios,2,160,320,Piura
+V0392,2026-06-19,C083,Impresora,Oficina,4,520,2080,Lima
+V0101,2026-06-20,C071,Tablet,Tecnología,6,1200,7200,Piura
+V0147,2026-06-20,C032,Laptop,Tecnología,1,2800,2800,Arequipa
+V0195,2026-06-20,C100,Silla ergonómica,Oficina,4,430,1720,Arequipa
+V0016,2026-06-21,C041,Monitor,Tecnología,5,750,3750,Piura
+V0290,2026-06-22,C073,Teclado,Accesorios,3,90,270,Lima
+V0318,2026-06-22,C065,Impresora,Oficina,10,520,5200,Piura
+V0406,2026-06-22,C033,Monitor,Tecnología,8,750,6000,Trujillo
+V0258,2026-06-23,C024,Tablet,Tecnología,7,1200,8400,Trujillo
+V0329,2026-06-25,C070,Tablet,Tecnología,9,1200,10800,Cusco
+V0466,2026-06-25,C059,Silla ergonómica,Oficina,5,430,2150,Arequipa
+V0469,2026-06-25,C083,Mouse,Accesorios,1,45,45,Lima
+V0053,2026-06-26,C055,Silla ergonómica,Oficina,8,430,3440,Piura
+V0334,2026-06-26,C099,Auriculares,Accesorios,7,160,1120,Arequipa
+V0387,2026-06-26,C083,Tablet,Tecnología,1,1200,1200,Trujillo
+V0276,2026-06-27,C091,Mouse,Accesorios,6,45,270,Lima
+V0084,2026-06-28,C053,Mouse,Accesorios,8,45,360,Cusco
+V0197,2026-06-29,C094,Monitor,Tecnología,6,750,4500,Arequipa
+V0263,2026-06-29,C058,Teclado,Accesorios,8,90,720,Lima
+V0498,2026-06-29,C091,Monitor,Tecnología,10,750,7500,Piura
+V0500,2026-06-29,C069,Laptop,Tecnología,10,2800,28000,Cusco
+V0188,2026-07-01,C010,Monitor,Tecnología,9,750,6750,Trujillo
+V0439,2026-07-01,C071,Laptop,Tecnología,2,2800,5600,Lima
+V0356,2026-07-04,C089,Laptop,Tecnología,5,2800,14000,Arequipa
+V0435,2026-07-04,C014,Auriculares,Accesorios,6,160,960,Lima
+V0445,2026-07-04,C033,Tablet,Tecnología,2,1200,2400,Arequipa
+V0144,2026-07-05,C013,Tablet,Tecnología,4,1200,4800,Cusco
+V0128,2026-07-06,C094,Laptop,Tecnología,10,2800,28000,Arequipa
+V0265,2026-07-06,C066,Mouse,Accesorios,7,45,315,Arequipa
+V0452,2026-07-06,C015,Impresora,Oficina,7,520,3640,Piura
+V0133,2026-07-07,C012,Monitor,Tecnología,7,750,5250,Trujillo
+V0267,2026-07-07,C047,Mouse,Accesorios,4,45,180,Trujillo
+V0270,2026-07-07,C051,Teclado,Accesorios,9,90,810,Cusco
+V0308,2026-07-07,C098,Teclado,Accesorios,5,90,450,Trujillo
+V0313,2026-07-07,C097,Silla ergonómica,Oficina,9,430,3870,Arequipa
+V0171,2026-07-08,C015,Silla ergonómica,Oficina,9,430,3870,Cusco
+V0257,2026-07-08,C056,Impresora,Oficina,2,520,1040,Trujillo
+V0143,2026-07-09,C028,Impresora,Oficina,1,520,520,Trujillo
+V0298,2026-07-09,C066,Auriculares,Accesorios,3,160,480,Piura
+V0402,2026-07-09,C041,Silla ergonómica,Oficina,4,430,1720,Trujillo
+V0114,2026-07-11,C056,Impresora,Oficina,6,520,3120,Arequipa
+V0463,2026-07-11,C051,Monitor,Tecnología,8,750,6000,Trujillo
+V0328,2026-07-12,C041,Tablet,Tecnología,9,1200,10800,Arequipa
+V0432,2026-07-12,C056,Silla ergonómica,Oficina,9,430,3870,Arequipa
+V0394,2026-07-13,C087,Laptop,Tecnología,5,2800,14000,Piura
+V0021,2026-07-14,C062,Laptop,Tecnología,10,2800,28000,Lima
+V0067,2026-07-14,C058,Monitor,Tecnología,9,750,6750,Trujillo
+V0377,2026-07-14,C030,Auriculares,Accesorios,9,160,1440,Arequipa
+V0399,2026-07-14,C060,Silla ergonómica,Oficina,5,430,2150,Piura
+V0135,2026-07-15,C082,Impresora,Oficina,10,520,5200,Cusco
+V0301,2026-07-16,C079,Laptop,Tecnología,5,2800,14000,Trujillo
+V0354,2026-07-16,C031,Laptop,Tecnología,5,2800,14000,Trujillo
+V0104,2026-07-17,C085,Tablet,Tecnología,7,1200,8400,Arequipa
+V0272,2026-07-18,C072,Tablet,Tecnología,9,1200,10800,Lima
+V0020,2026-07-19,C099,Monitor,Tecnología,7,750,5250,Piura
+V0022,2026-07-19,C054,Silla ergonómica,Oficina,5,430,2150,Piura
+V0024,2026-07-19,C044,Tablet,Tecnología,1,1200,1200,Trujillo
+V0427,2026-07-19,C087,Monitor,Tecnología,10,750,7500,Piura
+V0478,2026-07-20,C076,Auriculares,Accesorios,10,160,1600,Lima
+V0375,2026-07-21,C068,Mouse,Accesorios,3,45,135,Arequipa
+V0234,2026-07-22,C065,Auriculares,Accesorios,1,160,160,Cusco
+V0145,2026-07-23,C036,Silla ergonómica,Oficina,1,430,430,Arequipa
+V0281,2026-07-23,C092,Mouse,Accesorios,5,45,225,Trujillo
+V0430,2026-07-23,C100,Mouse,Accesorios,6,45,270,Cusco
+V0163,2026-07-24,C054,Silla ergonómica,Oficina,8,430,3440,Lima
+V0086,2026-07-25,C098,Tablet,Tecnología,5,1200,6000,Piura
+V0157,2026-07-25,C055,Laptop,Tecnología,8,2800,22400,Lima
+V0309,2026-07-25,C007,Silla ergonómica,Oficina,1,430,430,Piura
+V0352,2026-07-25,C086,Silla ergonómica,Oficina,2,430,860,Lima
+V0078,2026-07-26,C035,Tablet,Tecnología,5,1200,6000,Piura
+V0088,2026-07-26,C066,Silla ergonómica,Oficina,2,430,860,Lima
+V0294,2026-07-27,C039,Tablet,Tecnología,4,1200,4800,Trujillo
+V0351,2026-07-27,C055,Teclado,Accesorios,10,90,900,Piura
+V0138,2026-07-29,C015,Tablet,Tecnología,5,1200,6000,Arequipa
+V0388,2026-07-29,C020,Silla ergonómica,Oficina,7,430,3010,Cusco
+V0103,2026-07-30,C006,Auriculares,Accesorios,4,160,640,Cusco
+V0115,2026-07-30,C073,Monitor,Tecnología,9,750,6750,Arequipa
+V0168,2026-07-30,C046,Silla ergonómica,Oficina,2,430,860,Trujillo
+V0325,2026-07-31,C089,Auriculares,Accesorios,3,160,480,Arequipa
+V0489,2026-08-01,C091,Auriculares,Accesorios,8,160,1280,Trujillo
+V0245,2026-08-02,C024,Monitor,Tecnología,10,750,7500,Lima
+V0292,2026-08-02,C080,Impresora,Oficina,4,520,2080,Lima
+V0404,2026-08-02,C038,Laptop,Tecnología,5,2800,14000,Arequipa
+V0141,2026-08-03,C076,Silla ergonómica,Oficina,9,430,3870,Arequipa
+V0379,2026-08-03,C079,Mouse,Accesorios,1,45,45,Lima
+V0370,2026-08-05,C045,Mouse,Accesorios,1,45,45,Lima
+V0180,2026-08-06,C063,Impresora,Oficina,8,520,4160,Piura
+V0471,2026-08-07,C060,Teclado,Accesorios,6,90,540,Arequipa
+V0068,2026-08-08,C040,Impresora,Oficina,10,520,5200,Piura
+V0190,2026-08-08,C074,Silla ergonómica,Oficina,10,430,4300,Trujillo
+V0182,2026-08-09,C015,Mouse,Accesorios,6,45,270,Cusco
+V0260,2026-08-09,C078,Auriculares,Accesorios,2,160,320,Arequipa
+V0166,2026-08-10,C013,Mouse,Accesorios,2,45,90,Cusco
+V0264,2026-08-11,C036,Silla ergonómica,Oficina,10,430,4300,Lima
+V0083,2026-08-12,C082,Impresora,Oficina,3,520,1560,Trujillo
+V0266,2026-08-13,C005,Laptop,Tecnología,3,2800,8400,Arequipa
+V0106,2026-08-14,C013,Silla ergonómica,Oficina,2,430,860,Piura
+V0227,2026-08-14,C060,Monitor,Tecnología,6,750,4500,Cusco
+V0448,2026-08-14,C043,Auriculares,Accesorios,6,160,960,Trujillo
+V0269,2026-08-16,C098,Silla ergonómica,Oficina,6,430,2580,Lima
+V0436,2026-08-16,C047,Laptop,Tecnología,5,2800,14000,Cusco
+V0262,2026-08-17,C078,Impresora,Oficina,5,520,2600,Trujillo
+V0273,2026-08-17,C028,Impresora,Oficina,5,520,2600,Piura
+V0238,2026-08-18,C079,Teclado,Accesorios,8,90,720,Lima
+V0373,2026-08-18,C049,Silla ergonómica,Oficina,7,430,3010,Trujillo
+V0457,2026-08-18,C077,Auriculares,Accesorios,2,160,320,Trujillo
+V0233,2026-08-19,C045,Mouse,Accesorios,4,45,180,Lima
+V0431,2026-08-19,C063,Laptop,Tecnología,5,2800,14000,Arequipa
+V0496,2026-08-19,C034,Impresora,Oficina,1,520,520,Cusco
+V0162,2026-08-20,C030,Monitor,Tecnología,7,750,5250,Trujillo
+V0054,2026-08-21,C035,Silla ergonómica,Oficina,6,430,2580,Cusco
+V0360,2026-08-21,C096,Tablet,Tecnología,3,1200,3600,Piura
+V0011,2026-08-22,C018,Monitor,Tecnología,2,750,1500,Trujillo
+V0316,2026-08-22,C020,Tablet,Tecnología,9,1200,10800,Piura
+V0305,2026-08-23,C031,Auriculares,Accesorios,9,160,1440,Arequipa
+V0479,2026-08-23,C080,Silla ergonómica,Oficina,6,430,2580,Arequipa
+V0492,2026-08-23,C073,Impresora,Oficina,3,520,1560,Trujillo
+V0192,2026-08-24,C089,Silla ergonómica,Oficina,3,430,1290,Cusco
+V0204,2026-08-25,C058,Mouse,Accesorios,5,45,225,Lima
+V0368,2026-08-25,C087,Laptop,Tecnología,9,2800,25200,Cusco
+V0045,2026-08-26,C073,Tablet,Tecnología,4,1200,4800,Piura
+V0200,2026-08-26,C097,Teclado,Accesorios,8,90,720,Piura
+V0251,2026-08-26,C090,Silla ergonómica,Oficina,3,430,1290,Trujillo
+V0390,2026-08-26,C008,Impresora,Oficina,3,520,1560,Piura
+V0019,2026-08-27,C054,Silla ergonómica,Oficina,9,430,3870,Lima
+V0283,2026-08-27,C088,Mouse,Accesorios,8,45,360,Piura
+V0357,2026-08-27,C040,Laptop,Tecnología,2,2800,5600,Arequipa
+V0132,2026-08-28,C010,Silla ergonómica,Oficina,2,430,860,Arequipa
+V0030,2026-08-29,C003,Impresora,Oficina,2,520,1040,Piura
+V0072,2026-08-29,C038,Auriculares,Accesorios,8,160,1280,Lima
+V0082,2026-08-29,C067,Laptop,Tecnología,3,2800,8400,Trujillo
+V0247,2026-08-29,C006,Laptop,Tecnología,7,2800,19600,Trujillo
+V0136,2026-08-30,C004,Mouse,Accesorios,4,45,180,Piura
+V0326,2026-08-30,C095,Auriculares,Accesorios,9,160,1440,Lima
+V0361,2026-08-30,C097,Silla ergonómica,Oficina,7,430,3010,Piura
+V0371,2026-08-30,C005,Laptop,Tecnología,2,2800,5600,Cusco
+V0165,2026-08-31,C009,Silla ergonómica,Oficina,3,430,1290,Lima
+V0321,2026-08-31,C034,Impresora,Oficina,1,520,520,Piura
+V0389,2026-08-31,C031,Auriculares,Accesorios,3,160,480,Arequipa
+V0013,2026-09-01,C058,Tablet,Tecnología,3,1200,3600,Cusco
+V0154,2026-09-01,C058,Mouse,Accesorios,2,45,90,Cusco
+V0207,2026-09-01,C065,Monitor,Tecnología,6,750,4500,Arequipa
+V0421,2026-09-01,C008,Auriculares,Accesorios,7,160,1120,Lima
+V0467,2026-09-01,C013,Tablet,Tecnología,6,1200,7200,Trujillo
+V0353,2026-09-02,C042,Teclado,Accesorios,3,90,270,Arequipa
+V0062,2026-09-03,C057,Impresora,Oficina,8,520,4160,Cusco
+V0322,2026-09-03,C022,Monitor,Tecnología,1,750,750,Piura
+V0170,2026-09-04,C029,Monitor,Tecnología,3,750,2250,Lima
+V0043,2026-09-05,C060,Impresora,Oficina,10,520,5200,Trujillo
+V0096,2026-09-05,C061,Impresora,Oficina,7,520,3640,Arequipa
+V0330,2026-09-05,C025,Impresora,Oficina,10,520,5200,Arequipa
+V0092,2026-09-06,C016,Impresora,Oficina,8,520,4160,Lima
+V0110,2026-09-07,C070,Auriculares,Accesorios,6,160,960,Lima
+V0484,2026-09-07,C082,Auriculares,Accesorios,3,160,480,Piura
+V0041,2026-09-08,C014,Laptop,Tecnología,7,2800,19600,Trujillo
+V0100,2026-09-08,C020,Impresora,Oficina,10,520,5200,Trujillo
+V0142,2026-09-08,C079,Auriculares,Accesorios,2,160,320,Trujillo
+V0332,2026-09-08,C041,Impresora,Oficina,4,520,2080,Trujillo
+V0408,2026-09-08,C024,Teclado,Accesorios,3,90,270,Piura
+V0477,2026-09-08,C068,Mouse,Accesorios,5,45,225,Cusco
+V0061,2026-09-09,C014,Impresora,Oficina,3,520,1560,Lima
+V0064,2026-09-09,C010,Mouse,Accesorios,7,45,315,Piura
+V0279,2026-09-10,C004,Teclado,Accesorios,4,90,360,Cusco
+V0443,2026-09-10,C019,Impresora,Oficina,5,520,2600,Lima
+V0008,2026-09-11,C052,Monitor,Tecnología,7,750,5250,Arequipa
+V0125,2026-09-12,C037,Laptop,Tecnología,10,2800,28000,Arequipa
+V0304,2026-09-12,C003,Tablet,Tecnología,5,1200,6000,Lima
+V0090,2026-09-13,C081,Silla ergonómica,Oficina,10,430,4300,Trujillo
+V0095,2026-09-13,C092,Mouse,Accesorios,3,45,135,Cusco
+V0303,2026-09-13,C066,Monitor,Tecnología,3,750,2250,Trujillo
+V0422,2026-09-13,C056,Teclado,Accesorios,2,90,180,Cusco
+V0455,2026-09-13,C018,Mouse,Accesorios,7,45,315,Cusco
+V0155,2026-09-15,C029,Mouse,Accesorios,8,45,360,Piura
+V0383,2026-09-15,C038,Laptop,Tecnología,3,2800,8400,Arequipa
+V0415,2026-09-15,C090,Impresora,Oficina,1,520,520,Trujillo
+V0012,2026-09-16,C055,Silla ergonómica,Oficina,8,430,3440,Piura
+V0488,2026-09-16,C084,Monitor,Tecnología,7,750,5250,Trujillo
+V0458,2026-09-17,C089,Auriculares,Accesorios,9,160,1440,Trujillo
+V0218,2026-09-18,C047,Mouse,Accesorios,7,45,315,Lima
+V0314,2026-09-18,C052,Monitor,Tecnología,10,750,7500,Piura
+V0003,2026-09-19,C061,Tablet,Tecnología,4,1200,4800,Arequipa
+V0366,2026-09-19,C058,Tablet,Tecnología,2,1200,2400,Lima
+V0462,2026-09-19,C096,Impresora,Oficina,4,520,2080,Piura
+V0232,2026-09-20,C019,Impresora,Oficina,8,520,4160,Trujillo
+V0367,2026-09-20,C054,Tablet,Tecnología,3,1200,3600,Trujillo
+V0438,2026-09-20,C053,Tablet,Tecnología,9,1200,10800,Lima
+V0004,2026-09-21,C085,Mouse,Accesorios,5,45,225,Piura
+V0470,2026-09-22,C023,Teclado,Accesorios,4,90,360,Piura
+V0010,2026-09-23,C060,Monitor,Tecnología,3,750,2250,Lima
+V0259,2026-09-23,C035,Tablet,Tecnología,6,1200,7200,Lima
+V0287,2026-09-23,C037,Monitor,Tecnología,6,750,4500,Lima
+V0014,2026-09-24,C063,Monitor,Tecnología,5,750,3750,Arequipa
+V0210,2026-09-25,C079,Tablet,Tecnología,9,1200,10800,Arequipa
+V0057,2026-09-26,C077,Tablet,Tecnología,5,1200,6000,Cusco
+V0347,2026-09-26,C064,Tablet,Tecnología,9,1200,10800,Arequipa
+V0246,2026-09-27,C070,Silla ergonómica,Oficina,2,430,860,Piura
+V0417,2026-09-27,C033,Monitor,Tecnología,4,750,3000,Cusco
+V0228,2026-09-28,C054,Auriculares,Accesorios,9,160,1440,Arequipa

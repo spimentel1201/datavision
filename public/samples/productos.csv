@@ -1,0 +1,9 @@
+id_producto,nombre,categoria,precio_unitario,stock,proveedor,activo
+P001,Laptop,Tecnología,2800,180,TechPeru SAC,SI
+P002,Mouse,Accesorios,45,92,Periféricos Andinos,SI
+P003,Teclado,Accesorios,90,217,Periféricos Andinos,SI
+P004,Monitor,Tecnología,750,39,TechPeru SAC,SI
+P005,Impresora,Oficina,520,52,OfiMax EIRL,SI
+P006,Silla ergonómica,Oficina,430,289,OfiMax EIRL,SI
+P007,Auriculares,Accesorios,160,63,Sonido Global,SI
+P008,Tablet,Tecnología,1200,202,TechPeru SAC,SI
